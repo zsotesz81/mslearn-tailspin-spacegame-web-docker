@@ -23,8 +23,6 @@ stages:
         containerRegistry: 'Container Registry Connection'
         tags: |
           $(tag)
-
-    steps:
     - task: UseDotNet@2
       displayName: 'Use .NET Core SDK $(dotnetSdkVersion)'
       inputs:
